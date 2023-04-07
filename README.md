@@ -8,10 +8,20 @@ This repo only deals with binding ImGui with lua and doesn't deal with setting u
 
 For LOVE bindings check out https://github.com/slages/love-imgui (uses these C++ bindings and does the rest of the work for you).
 
-Function support for dear imgui 1.60:
+Function support for dear imgui 1.89.5 (docking):
 
-    Normal Imgui functions:   Supported: 204 Unsupported: 117
-    Imgui DrawList functions: Supported: 36 Unsupported: 12
+    Normal Imgui functions:   Supported: 336/398
+
+### Usage
+Code:
+```shell
+EWCommandLineTools imgui "/path_to_imgui" "imgui_iterator.cpp.inc"
+```
+
+### Dependencies
+* dotnet 6
+* libclang.runtime
+* libclangsharp.runtime
 
 
 ## How to call these imgui bindings from lua
